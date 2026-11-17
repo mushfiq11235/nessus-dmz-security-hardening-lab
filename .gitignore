@@ -1,0 +1,25 @@
+# Never commit credentials, activation codes or VM files
+*.pem
+*.key
+*.crt
+*.vmdk
+*.vmx
+*.vmem
+*.vmsn
+*.iso
+*.ova
+*.ovf
+*.7z
+*.zip
+
+# Raw Nessus exports can embed scanner details; the sanitized HTML reports live in reports/
+*.nessus
+*.db
+
+# Personal notes can contain credentials
+notes/
+*.notes.txt
+
+.DS_Store
+Thumbs.db
+__pycache__/

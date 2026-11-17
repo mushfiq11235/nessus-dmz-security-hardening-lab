@@ -1,0 +1,257 @@
+host,plugin_id,name,severity,risk,cvss_v3,cvss_v2,ports,solution
+10.10.10.1,142960,HSTS Missing From HTTPS Server (RFC 6797),Medium,Medium,6.5,5.8,tcp/443/www,Configure the remote web server to use HSTS.
+10.10.10.1,51192,SSL Certificate Cannot Be Trusted,Medium,Medium,6.5,6.4,tcp/443/www,Purchase or generate a proper SSL certificate for this service.
+10.10.10.1,57582,SSL Self-Signed Certificate,Medium,Medium,6.5,6.4,tcp/443/www,Purchase or generate a proper SSL certificate for this service.
+10.10.10.1,10114,ICMP Timestamp Request Remote Date Disclosure,Low,Low,4.0,2.1,icmp/0,"Filter out the ICMP timestamp requests (13), and the outgoing ICMP timestamp replies (14)."
+10.10.10.1,46180,Additional DNS Hostnames,Info,None,,,tcp/0,"If you want to test them, re-scan using the special vhost syntax, such as : www.example.com[192.0.32.10]"
+10.10.10.1,45590,Common Platform Enumeration (CPE),Info,None,,,tcp/0,n/a
+10.10.10.1,11002,DNS Server Detection,Info,None,,,tcp/53/dns,Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.
+10.10.10.1,11002,DNS Server Detection,Info,None,,,udp/53/dns,Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.
+10.10.10.1,72779,DNS Server Version Detection,Info,None,,,tcp/53/dns,n/a
+10.10.10.1,35371,DNS Server hostname.bind Map Hostname Disclosure,Info,None,,,udp/53/dns,It may be possible to disable this feature.  Consult the vendor's documentation for more information.
+10.10.10.1,54615,Device Type,Info,None,,,tcp/0,n/a
+10.10.10.1,35716,Ethernet Card Manufacturer Detection,Info,None,,,tcp/0,n/a
+10.10.10.1,86420,Ethernet MAC Addresses,Info,None,,,tcp/0,n/a
+10.10.10.1,84502,HSTS Missing From HTTPS Server,Info,None,,,tcp/443/www,Configure the remote web server to use HSTS.
+10.10.10.1,10107,HTTP Server Type and Version,Info,None,,,tcp/80/www,n/a
+10.10.10.1,10107,HTTP Server Type and Version,Info,None,,,tcp/443/www,n/a
+10.10.10.1,12053,Host Fully Qualified Domain Name (FQDN) Resolution,Info,None,,,tcp/0,n/a
+10.10.10.1,24260,HyperText Transfer Protocol (HTTP) Information,Info,None,,,tcp/80/www,n/a
+10.10.10.1,24260,HyperText Transfer Protocol (HTTP) Information,Info,None,,,tcp/443/www,n/a
+10.10.10.1,106658,JQuery Detection,Info,None,,,tcp/443/www,n/a
+10.10.10.1,11219,Nessus SYN scanner,Info,None,,,tcp/53/dns,Protect your target with an IP filter.
+10.10.10.1,11219,Nessus SYN scanner,Info,None,,,tcp/80/www,Protect your target with an IP filter.
+10.10.10.1,11219,Nessus SYN scanner,Info,None,,,tcp/443/www,Protect your target with an IP filter.
+10.10.10.1,19506,Nessus Scan Information,Info,None,,,tcp/0,n/a
+10.10.10.1,10884,Network Time Protocol (NTP) Server Detection,Info,None,,,udp/123/ntp,n/a
+10.10.10.1,209654,OS Fingerprints Detected,Info,None,,,tcp/0,n/a
+10.10.10.1,11936,OS Identification,Info,None,,,tcp/0,n/a
+10.10.10.1,277653,Remote Services Using Post-Quantum Ciphers,Info,None,,,tcp/443/www,n/a
+10.10.10.1,56984,SSL / TLS Versions Supported,Info,None,,,tcp/443/www,n/a
+10.10.10.1,10863,SSL Certificate Information,Info,None,,,tcp/443/www,n/a
+10.10.10.1,21643,SSL Cipher Suites Supported,Info,None,,,tcp/443/www,n/a
+10.10.10.1,57041,SSL Perfect Forward Secrecy Cipher Suites Supported,Info,None,,,tcp/443/www,n/a
+10.10.10.1,22964,Service Detection,Info,None,,,tcp/80/www,n/a
+10.10.10.1,22964,Service Detection,Info,None,,,tcp/443/www,n/a
+10.10.10.1,298387,Shor's Harvest Now Decrypt Later,Info,None,,,tcp/0,Replace affected ciphers with algorithms chosen to resist CRQC attack.
+10.10.10.1,25220,TCP/IP Timestamps Supported,Info,None,,,tcp/0,n/a
+10.10.10.1,84821,TLS ALPN Supported Protocol Enumeration,Info,None,,,tcp/443/www,n/a
+10.10.10.1,277654,TLS Supported Groups,Info,None,,,tcp/443/www,n/a
+10.10.10.1,136318,TLS Version 1.2 Protocol Detection,Info,None,,,tcp/443/www,N/A
+10.10.10.1,138330,TLS Version 1.3 Protocol Detection,Info,None,,,tcp/443/www,N/A
+10.10.10.1,10287,Traceroute Information,Info,None,,,udp/0,n/a
+10.10.10.1,87872,Unbound DNS Resolver Remote Version Detection,Info,None,,,tcp/53/dns,n/a
+10.10.10.1,20094,VMware Virtual Machine Detection,Info,None,,,tcp/0,"Since it is physically accessible through the network, ensure that its configuration matches your organization's security policy."
+10.10.10.1,100669,Web Application Cookies Are Expired,Info,None,,,tcp/80/www,"Each cookie should be carefully reviewed to determine if it contains sensitive data or is relied upon for a security decision. If needed, set an expiration date in the future so the cookie will persist or remove the Expires cookie attribute altogether to convert the cookie to a session cookie."
+10.10.10.1,100669,Web Application Cookies Are Expired,Info,None,,,tcp/443/www,"Each cookie should be carefully reviewed to determine if it contains sensitive data or is relied upon for a security decision. If needed, set an expiration date in the future so the cookie will persist or remove the Expires cookie attribute altogether to convert the cookie to a session cookie."
+10.10.10.1,10386,Web Server No 404 Error Code Check,Info,None,,,tcp/80/www,n/a
+10.10.10.1,10386,Web Server No 404 Error Code Check,Info,None,,,tcp/443/www,n/a
+10.10.10.170,365762,Ubuntu 16.04 LTS / 18.04 LTS / 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : FFmpeg vulnerabilities (USN-8915-1),Critical,Critical,8.8,10.0,tcp/0,Update the affected packages.
+10.10.10.170,322791,Ubuntu 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : FFmpeg vulnerabilities (USN-8469-1),Critical,Critical,9.8,10.0,tcp/0,Update the affected packages.
+10.10.10.170,344612,Ubuntu 26.04 LTS : FFmpeg vulnerabilities (USN-8738-1),Critical,Critical,8.8,10.0,tcp/0,Update the affected packages.
+10.10.10.170,381339,Ubuntu 26.04 LTS : Linux kernel vulnerabilities (USN-9018-1),Critical,Critical,9.8,10.0,tcp/0,Update the affected kernel package.
+10.10.10.170,350176,Ubuntu 14.04 LTS / 18.04 LTS / 20.04 LTS / 24.04 LTS / 26.04 LTS : libass vulnerabilities (USN-8815-1),High,Medium,8.8,6.8,tcp/0,Update the affected libass4 and / or libass9 packages.
+10.10.10.170,346232,Ubuntu 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : SRT vulnerabilities (USN-8764-1),High,High,9.1,7.5,tcp/0,Update the affected packages.
+10.10.10.170,376443,Ubuntu 24.04 LTS / 26.04 LTS : Linux kernel vulnerabilities (USN-8959-1),High,Medium,7.8,6.8,tcp/0,Update the affected kernel package.
+10.10.10.170,51192,SSL Certificate Cannot Be Trusted,Medium,Medium,6.5,6.4,tcp/8834/www,Purchase or generate a proper SSL certificate for this service.
+10.10.10.170,45590,Common Platform Enumeration (CPE),Info,None,,,tcp/0,n/a
+10.10.10.170,182774,Curl Installed (Linux / Unix),Info,None,,,tcp/0,n/a
+10.10.10.170,55472,Device Hostname,Info,None,,,tcp/0,n/a
+10.10.10.170,54615,Device Type,Info,None,,,tcp/0,n/a
+10.10.10.170,25203,Enumerate IPv4 Interfaces via SSH,Info,None,,,tcp/0,Disable any unused IPv4 interfaces.
+10.10.10.170,25202,Enumerate IPv6 Interfaces via SSH,Info,None,,,tcp/0,"Disable IPv6 if you are not actually using it. Otherwise, disable any unused IPv6 interfaces."
+10.10.10.170,33276,Enumerate MAC Addresses via SSH,Info,None,,,tcp/0,Disable any unused interfaces.
+10.10.10.170,170170,Enumerate the Network Interface configuration via SSH,Info,None,,,tcp/0,n/a
+10.10.10.170,179200,Enumerate the Network Routing configuration via SSH,Info,None,,,tcp/0,n/a
+10.10.10.170,168980,Enumerate the PATH Variables,Info,None,,,tcp/0,Ensure that directories listed here are in line with corporate policy.
+10.10.10.170,35716,Ethernet Card Manufacturer Detection,Info,None,,,tcp/0,n/a
+10.10.10.170,86420,Ethernet MAC Addresses,Info,None,,,tcp/0,n/a
+10.10.10.170,168982,Filepaths contain Dangerous characters (Linux),Info,None,,,tcp/22,Rename these files or folders to not include dangerous characters.
+10.10.10.170,10107,HTTP Server Type and Version,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,12053,Host Fully Qualified Domain Name (FQDN) Resolution,Info,None,,,tcp/0,n/a
+10.10.10.170,24260,HyperText Transfer Protocol (HTTP) Information,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,171410,IP Assignment Method Detection,Info,None,,,tcp/0,n/a
+10.10.10.170,46215,Inconsistent Hostname and IP Address,Info,None,,,tcp/0,Fix the reverse DNS or host file.
+10.10.10.170,151883,Libgcrypt Installed (Linux/UNIX),Info,None,,,tcp/0,n/a
+10.10.10.170,200214,Libndp Installed (Linux / Unix),Info,None,,,tcp/0,n/a
+10.10.10.170,333918,Linux Environment Variable Enumeration,Info,None,,,tcp/0,n/a
+10.10.10.170,157358,Linux Mounted Devices,Info,None,,,tcp/0,n/a
+10.10.10.170,193143,Linux Time Zone Information,Info,None,,,tcp/0,None
+10.10.10.170,95928,Linux User List Enumeration,Info,None,,,tcp/0,None
+10.10.10.170,19506,Nessus Scan Information,Info,None,,,tcp/0,n/a
+10.10.10.170,10147,Nessus Server Detection,Info,None,,,tcp/8834/www,Ensure that the remote Nessus installation has been authorized.
+10.10.10.170,64582,Netstat Connection Information,Info,None,,,tcp/0,n/a
+10.10.10.170,14272,Netstat Portscanner (SSH),Info,None,,,tcp/111/rpc-portmapper,n/a
+10.10.10.170,14272,Netstat Portscanner (SSH),Info,None,,,udp/111/rpc-portmapper,n/a
+10.10.10.170,14272,Netstat Portscanner (SSH),Info,None,,,udp/5353/mdns,n/a
+10.10.10.170,14272,Netstat Portscanner (SSH),Info,None,,,tcp/8834/www,n/a
+10.10.10.170,209654,OS Fingerprints Detected,Info,None,,,tcp/0,n/a
+10.10.10.170,11936,OS Identification,Info,None,,,tcp/0,n/a
+10.10.10.170,97993,OS Identification and Installed Software Enumeration over SSH v2 (Using New SSH Library),Info,None,,,tcp/0,n/a
+10.10.10.170,117887,OS Security Patch Assessment Available,Info,None,,,tcp/0,n/a
+10.10.10.170,168007,OpenSSL Installed (Linux),Info,None,,,tcp/0,n/a
+10.10.10.170,232856,OpenVPN Installed (Linux),Info,None,,,tcp/0,n/a
+10.10.10.170,179139,Package Manager Packages Report (nix),Info,None,,,tcp/0,n/a
+10.10.10.170,66334,Patch Report,Info,None,,,tcp/0,Install the patches listed below.
+10.10.10.170,164122,Python Installed Packages,Info,None,,,tcp/0,n/a
+10.10.10.170,374147,Qt Installed (Linux / Unix),Info,None,,,tcp/0,n/a
+10.10.10.170,11111,RPC Services Enumeration,Info,None,,,tcp/111/rpc-portmapper,n/a
+10.10.10.170,11111,RPC Services Enumeration,Info,None,,,udp/111/rpc-portmapper,n/a
+10.10.10.170,53335,RPC portmapper (TCP),Info,None,,,tcp/111/rpc-portmapper,n/a
+10.10.10.170,10223,RPC portmapper Service Detection,Info,None,0.0,0.0,udp/111/rpc-portmapper,n/a
+10.10.10.170,277653,Remote Services Using Post-Quantum Ciphers,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,56984,SSL / TLS Versions Supported,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,10863,SSL Certificate Information,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,21643,SSL Cipher Suites Supported,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,57041,SSL Perfect Forward Secrecy Cipher Suites Supported,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,22964,Service Detection,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,298387,Shor's Harvest Now Decrypt Later,Info,None,,,tcp/0,Replace affected ciphers with algorithms chosen to resist CRQC attack.
+10.10.10.170,22869,Software Enumeration (SSH),Info,None,,,tcp/0,Remove any software that is not in compliance with your organization's acceptable use and security policies.
+10.10.10.170,42822,Strict Transport Security (STS) Detection,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,163103,System Restart Required,Info,None,,,tcp/0,Restart the target system to ensure the updates are applied.
+10.10.10.170,277654,TLS Supported Groups,Info,None,,,tcp/8834/www,n/a
+10.10.10.170,136318,TLS Version 1.2 Protocol Detection,Info,None,,,tcp/8834/www,N/A
+10.10.10.170,138330,TLS Version 1.3 Protocol Detection,Info,None,,,tcp/8834/www,N/A
+10.10.10.170,110095,Target Credential Issues by Authentication Protocol - No Issues Found,Info,None,,,tcp/0,n/a
+10.10.10.170,141118,Target Credential Status by Authentication Protocol - Valid Credentials Provided,Info,None,,,tcp/0,n/a
+10.10.10.170,163326,Tenable Nessus Installed (Linux),Info,None,,,tcp/0,n/a
+10.10.10.170,192709,Tukaani XZ Utils Installed (Linux / Unix),Info,None,,,tcp/0,n/a
+10.10.10.170,198218,Ubuntu Pro Subscription Detection,Info,None,,,tcp/0,n/a
+10.10.10.170,83303,Unix / Linux - Local Users Information : Passwords Never Expire,Info,None,,,tcp/0,Allow or require users to change their passwords regularly.
+10.10.10.170,110483,Unix / Linux Running Processes Information,Info,None,,,tcp/0,n/a
+10.10.10.170,152743,Unix Software Discovery Commands Not Available,Info,None,,,tcp/0,n/a
+10.10.10.170,186361,VMWare Tools or Open VM Tools Installed (Linux),Info,None,,,tcp/0,n/a
+10.10.10.170,20094,VMware Virtual Machine Detection,Info,None,,,tcp/0,"Since it is physically accessible through the network, ensure that its configuration matches your organization's security policy."
+10.10.10.170,189731,Vim Installed (Linux),Info,None,,,tcp/0,n/a
+10.10.10.170,182848,libcurl Installed (Linux / Unix),Info,None,,,tcp/0,n/a
+10.10.10.170,66717,mDNS Detection (Local Network),Info,None,,,udp/5353/mdns,"Filter incoming traffic to UDP port 5353, if desired."
+10.10.20.10,39520,Backported Security Patch Detection (SSH),Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,39521,Backported Security Patch Detection (WWW),Info,None,,,tcp/80/www,n/a
+10.10.20.10,45590,Common Platform Enumeration (CPE),Info,None,,,tcp/0,n/a
+10.10.20.10,54615,Device Type,Info,None,,,tcp/0,n/a
+10.10.20.10,10107,HTTP Server Type and Version,Info,None,,,tcp/80/www,n/a
+10.10.20.10,24260,HyperText Transfer Protocol (HTTP) Information,Info,None,,,tcp/80/www,n/a
+10.10.20.10,11219,Nessus SYN scanner,Info,None,,,tcp/22/ssh,Protect your target with an IP filter.
+10.10.20.10,11219,Nessus SYN scanner,Info,None,,,tcp/80/www,Protect your target with an IP filter.
+10.10.20.10,19506,Nessus Scan Information,Info,None,,,tcp/0,n/a
+10.10.20.10,209654,OS Fingerprints Detected,Info,None,,,tcp/0,n/a
+10.10.20.10,11936,OS Identification,Info,None,,,tcp/0,n/a
+10.10.20.10,117886,OS Security Patch Assessment Not Available,Info,None,,,tcp/0,n/a
+10.10.20.10,181418,OpenSSH Detection,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,277653,Remote Services Using Post-Quantum Ciphers,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,70657,SSH Algorithms and Languages Supported,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,149334,SSH Password Authentication Accepted,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,10881,SSH Protocol Versions Supported,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,153588,SSH SHA-1 HMAC Algorithms Enabled,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,10267,SSH Server Type and Version Information,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,22964,Service Detection,Info,None,,,tcp/22/ssh,n/a
+10.10.20.10,22964,Service Detection,Info,None,,,tcp/80/www,n/a
+10.10.20.10,298387,Shor's Harvest Now Decrypt Later,Info,None,,,tcp/0,Replace affected ciphers with algorithms chosen to resist CRQC attack.
+10.10.20.10,25220,TCP/IP Timestamps Supported,Info,None,,,tcp/0,n/a
+10.10.20.10,110723,Target Credential Status by Authentication Protocol - No Credentials Provided,Info,None,,,tcp/0,n/a
+10.10.20.10,10287,Traceroute Information,Info,None,,,udp/0,n/a
+10.10.20.10,106375,nginx HTTP Server Detection,Info,None,,,tcp/80/www,n/a
+10.10.20.20,201352,Canonical Ubuntu Linux SEoL (8.04.x),Critical,Critical,10.0,10.0,tcp/80/www,Upgrade to a version of Canonical Ubuntu Linux that is currently supported.
+10.10.20.20,32314,Debian OpenSSH/OpenSSL Package Random Number Generator Weakness,Critical,Critical,,10.0,tcp/22/ssh,"Consider all cryptographic material generated on the remote host to be guessable. In particuliar, all SSH, SSL and OpenVPN key material should be re-generated."
+10.10.20.20,136769,ISC BIND Service Downgrade / Reflected DoS,High,Medium,8.6,5.0,udp/53/dns,Upgrade to the ISC BIND version referenced in the vendor advisory.
+10.10.20.20,11213,HTTP TRACE / TRACK Methods Allowed,Medium,Medium,5.3,5.0,tcp/80/www,Disable these HTTP methods. Refer to the plugin output for more information.
+10.10.20.20,139915,"ISC BIND 9.x < 9.11.22, 9.12.x < 9.16.6, 9.17.x < 9.17.4 DoS",Medium,Medium,6.5,4.0,udp/53/dns,"Upgrade to BIND 9.11.22, 9.16.6, 9.17.4 or later."
+10.10.20.20,136808,ISC BIND Denial of Service,Medium,Medium,5.9,4.3,udp/53/dns,Upgrade to the patched release most closely related to your current version of BIND.
+10.10.20.20,57608,SMB Signing not required,Medium,Medium,5.3,5.0,tcp/445/cifs,"Enforce message signing in the host's configuration. On Windows, this is found in the policy setting 'Microsoft network server: Digitally sign communications (always)'. On Samba, the setting is called 'server signing'. See the 'see also' links for further details."
+10.10.20.20,90317,SSH Weak Algorithms Supported,Medium,Medium,,4.3,tcp/22/ssh,Contact the vendor or consult product documentation to remove the weak ciphers.
+10.10.20.20,90509,Samba Badlock Vulnerability,Medium,Medium,7.5,6.8,tcp/445/cifs,Upgrade to Samba version 4.2.11 / 4.3.8 / 4.4.2 or later.
+10.10.20.20,10114,ICMP Timestamp Request Remote Date Disclosure,Low,Low,4.0,2.1,icmp/0,"Filter out the ICMP timestamp requests (13), and the outgoing ICMP timestamp replies (14)."
+10.10.20.20,70658,SSH Server CBC Mode Ciphers Enabled,Low,Low,3.7,2.6,tcp/22/ssh,"Contact the vendor or consult product documentation to disable CBC mode cipher encryption, and enable CTR or GCM cipher mode encryption."
+10.10.20.20,153953,SSH Weak Key Exchange Algorithms Enabled,Low,Low,3.7,2.6,tcp/22/ssh,Contact the vendor or consult product documentation to disable the weak algorithms.
+10.10.20.20,71049,SSH Weak MAC Algorithms Enabled,Low,Low,,2.6,tcp/22/ssh,Contact the vendor or consult product documentation to disable MD5 and 96-bit MAC algorithms.
+10.10.20.20,18261,Apache Banner Linux Distribution Disclosure,Info,None,,,tcp/0,"If you do not wish to display this information, edit 'httpd.conf' and set the directive 'ServerTokens Prod' and restart Apache."
+10.10.20.20,48204,Apache HTTP Server Version,Info,None,,,tcp/80/www,n/a
+10.10.20.20,84574,Backported Security Patch Detection (PHP),Info,None,,,tcp/80/www,n/a
+10.10.20.20,39520,Backported Security Patch Detection (SSH),Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,39521,Backported Security Patch Detection (WWW),Info,None,,,tcp/80/www,n/a
+10.10.20.20,45590,Common Platform Enumeration (CPE),Info,None,,,tcp/0,n/a
+10.10.20.20,10028,DNS Server BIND version Directive Remote Version Detection,Info,None,,,udp/53/dns,It is possible to hide the version number of BIND by using the 'version' directive in the 'options' section in named.conf.
+10.10.20.20,11002,DNS Server Detection,Info,None,,,tcp/53/dns,Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.
+10.10.20.20,11002,DNS Server Detection,Info,None,,,udp/53/dns,Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.
+10.10.20.20,72779,DNS Server Version Detection,Info,None,,,tcp/53/dns,n/a
+10.10.20.20,35371,DNS Server hostname.bind Map Hostname Disclosure,Info,None,,,udp/53/dns,It may be possible to disable this feature.  Consult the vendor's documentation for more information.
+10.10.20.20,54615,Device Type,Info,None,,,tcp/0,n/a
+10.10.20.20,10092,FTP Server Detection,Info,None,,,tcp/21/ftp,n/a
+10.10.20.20,10107,HTTP Server Type and Version,Info,None,,,tcp/80/www,n/a
+10.10.20.20,24260,HyperText Transfer Protocol (HTTP) Information,Info,None,,,tcp/80/www,n/a
+10.10.20.20,11156,IRC Daemon Version Detection,Info,None,,,tcp/6667/irc,n/a
+10.10.20.20,10397,Microsoft Windows SMB LanMan Pipe Server Listing Disclosure,Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,10785,Microsoft Windows SMB NativeLanManager Remote System Information Disclosure,Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,11011,Microsoft Windows SMB Service Detection,Info,None,,,tcp/139/smb,n/a
+10.10.20.20,11011,Microsoft Windows SMB Service Detection,Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,100871,Microsoft Windows SMB Versions Supported (remote check),Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,106716,Microsoft Windows SMB2 and SMB3 Dialects Supported (remote check),Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,42255,NFS Server Superfluous,Info,None,0.0,0.0,tcp/2049/rpc-nfs,Disable this service.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/21/ftp,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/22/ssh,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/23/telnet,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/25/smtp,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/53/dns,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/80/www,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/111/rpc-portmapper,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/139/smb,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/445/cifs,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/512,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/513,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/514,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/1099/rmi_registry,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/2049/rpc-nfs,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/2121,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/3306,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/3632,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/5432/postgresql,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/6667/irc,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/8180,Protect your target with an IP filter.
+10.10.20.20,11219,Nessus SYN scanner,Info,None,,,tcp/8787,Protect your target with an IP filter.
+10.10.20.20,19506,Nessus Scan Information,Info,None,,,tcp/0,n/a
+10.10.20.20,209654,OS Fingerprints Detected,Info,None,,,tcp/0,n/a
+10.10.20.20,11936,OS Identification,Info,None,,,tcp/0,n/a
+10.10.20.20,117886,OS Security Patch Assessment Not Available,Info,None,,,tcp/0,n/a
+10.10.20.20,181418,OpenSSH Detection,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,48243,PHP Version Detection,Info,None,,,tcp/80/www,n/a
+10.10.20.20,66334,Patch Report,Info,None,,,tcp/0,Install the patches listed below.
+10.10.20.20,26024,PostgreSQL Server Detection,Info,None,,,tcp/5432/postgresql,Limit incoming traffic to this port if desired.
+10.10.20.20,22227,RMI Registry Detection,Info,None,,,tcp/1099/rmi_registry,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,tcp/111/rpc-portmapper,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,udp/111/rpc-portmapper,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,tcp/2049/rpc-nfs,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,udp/2049/rpc-nfs,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,udp/33944/rpc-nlockmgr,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,tcp/37223/rpc-mountd,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,udp/45231/rpc-mountd,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,udp/49201/rpc-status,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,tcp/50265/rpc-status,n/a
+10.10.20.20,11111,RPC Services Enumeration,Info,None,,,tcp/52284/rpc-nlockmgr,n/a
+10.10.20.20,53335,RPC portmapper (TCP),Info,None,,,tcp/111/rpc-portmapper,n/a
+10.10.20.20,10223,RPC portmapper Service Detection,Info,None,0.0,0.0,udp/111/rpc-portmapper,n/a
+10.10.20.20,277650,Remote Services Not Using Post-Quantum Ciphers,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,10263,SMTP Server Detection,Info,None,,,tcp/25/smtp,"Disable this service if you do not use it, or filter incoming traffic to this port."
+10.10.20.20,70657,SSH Algorithms and Languages Supported,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,149334,SSH Password Authentication Accepted,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,10881,SSH Protocol Versions Supported,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,153588,SSH SHA-1 HMAC Algorithms Enabled,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,10267,SSH Server Type and Version Information,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,25240,Samba Server Detection,Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,104887,Samba Version,Info,None,,,tcp/445/cifs,n/a
+10.10.20.20,96982,Server Message Block (SMB) Protocol Version 1 Enabled (uncredentialed check),Info,None,,,tcp/445/cifs,"Disable SMBv1 according to the vendor instructions in Microsoft KB2696547. Additionally, block SMB directly by blocking TCP port 445 on all network boundary devices. For SMB over the NetBIOS API, block TCP ports 137 / 139 and UDP ports 137 / 138 on all network boundary devices."
+10.10.20.20,22964,Service Detection,Info,None,,,tcp/21/ftp,n/a
+10.10.20.20,22964,Service Detection,Info,None,,,tcp/22/ssh,n/a
+10.10.20.20,22964,Service Detection,Info,None,,,tcp/23/telnet,n/a
+10.10.20.20,22964,Service Detection,Info,None,,,tcp/25/smtp,n/a
+10.10.20.20,22964,Service Detection,Info,None,,,tcp/80/www,n/a
+10.10.20.20,17975,Service Detection (GET request),Info,None,,,tcp/6667/irc,n/a
+10.10.20.20,298387,Shor's Harvest Now Decrypt Later,Info,None,,,tcp/0,Replace affected ciphers with algorithms chosen to resist CRQC attack.
+10.10.20.20,25220,TCP/IP Timestamps Supported,Info,None,,,tcp/0,n/a
+10.10.20.20,110723,Target Credential Status by Authentication Protocol - No Credentials Provided,Info,None,,,tcp/0,n/a
+10.10.20.20,10287,Traceroute Information,Info,None,,,udp/0,n/a
+10.10.20.20,11154,Unknown Service Detection: Banner Retrieval,Info,None,,,tcp/512,n/a
+10.10.20.20,11154,Unknown Service Detection: Banner Retrieval,Info,None,,,tcp/514,n/a
+10.10.20.20,11154,Unknown Service Detection: Banner Retrieval,Info,None,,,tcp/8787,n/a
+10.10.20.20,11424,WebDAV Detection,Info,None,,,tcp/80/www,http://support.microsoft.com/default.aspx?kbid=241520
+10.10.20.20,10150,Windows NetBIOS / SMB Remote Host Information Disclosure,Info,None,,,udp/137/netbios-ns,n/a
+10.10.20.20,52703,vsftpd Detection,Info,None,,,tcp/21/ftp,n/a

@@ -1,0 +1,50 @@
+host,plugin_id,name,severity_before,cvss,ports,severity_after,status
+10.10.20.20,171340,Apache Tomcat SEoL (<= 5.5.x),Critical,10.0,tcp/8180/www,gone,Open - not re-detected: Nessus did not fingerprint Tomcat on 8180; Tomcat still running
+10.10.20.20,201352,Canonical Ubuntu Linux SEoL (8.04.x),Critical,10.0,tcp/80/www,Critical,"Open - accepted risk: Ubuntu 8.04 is end-of-life, needs OS replacement"
+10.10.20.20,32314,Debian OpenSSH/OpenSSL Package Random Number Generator Weakness,Critical,10.0,tcp/22/ssh,Critical,"Open - accepted risk: weak SSH host keys, needs patched OpenSSL and new keys"
+10.10.20.20,32321,Debian OpenSSH/OpenSSL Package Random Number Generator Weakness (SSL check),Critical,10.0,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,61708,VNC Server 'password' Password,Critical,10.0,tcp/5900/vnc,gone,Fixed - Fix 1: VNC disabled
+10.10.10.170,322791,Ubuntu 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : FFmpeg vulnerabilities (USN-8469-1),Critical,9.8,tcp/0,Critical,"Open - fix needs Ubuntu Pro (esm-apps), not applied"
+10.10.10.170,381339,Ubuntu 26.04 LTS : Linux kernel vulnerabilities (USN-9018-1),Critical,9.8,tcp/0,Critical,"Open - kernel advisory, remained after apt upgrade"
+10.10.20.20,134862,Apache Tomcat AJP Connector Request Injection (Ghostcat),Critical,9.8,tcp/8009/ajp13,gone,Fixed - Fix 3: AJP connector disabled
+10.10.20.20,51988,Bind Shell Backdoor Detection,Critical,9.8,tcp/1524/wild_shell,gone,Fixed - Fix 2: bind shell removed
+10.10.20.20,20007,SSL Version 2 and 3 Protocol Detection,Critical,9.8,tcp/25/smtp;tcp/5432/postgresql,gone,Fixed - Fix 5: TLS disabled on SMTP and PostgreSQL
+10.10.10.170,365762,Ubuntu 16.04 LTS / 18.04 LTS / 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : FFmpeg vulnerabilities (USN-8915-1),Critical,8.8,tcp/0,Critical,"Open - fix needs Ubuntu Pro (esm-apps), not applied"
+10.10.10.170,344612,Ubuntu 26.04 LTS : FFmpeg vulnerabilities (USN-8738-1),Critical,8.8,tcp/0,Critical,"Open - fix needs Ubuntu Pro (esm-apps), not applied"
+10.10.10.170,346232,Ubuntu 20.04 LTS / 22.04 LTS / 24.04 LTS / 26.04 LTS : SRT vulnerabilities (USN-8764-1),High,9.1,tcp/0,High,"Open - fix needs Ubuntu Pro (esm-apps), not applied"
+10.10.10.170,350176,Ubuntu 14.04 LTS / 18.04 LTS / 20.04 LTS / 24.04 LTS / 26.04 LTS : libass vulnerabilities (USN-8815-1),High,8.8,tcp/0,High,"Open - fix needs Ubuntu Pro (esm-apps), not applied"
+10.10.20.20,136769,ISC BIND Service Downgrade / Reflected DoS,High,8.6,udp/53/dns,High,Open - not in the top five
+10.10.10.170,376443,Ubuntu 24.04 LTS / 26.04 LTS : Linux kernel vulnerabilities (USN-8959-1),High,7.8,tcp/0,High,"Open - kernel advisory, remained after apt upgrade"
+10.10.20.20,42873,SSL Medium Strength Cipher Suites Supported (SWEET32),High,7.5,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,42256,NFS Shares World Readable,Medium,7.5,tcp/2049/rpc-nfs,gone,Fixed - Fix 4: NFS export removed
+10.10.20.20,90509,Samba Badlock Vulnerability,Medium,7.5,tcp/445/cifs,Medium,Open - not in the top five
+10.10.10.1,33447,Multiple Vendor DNS Query ID Field Prediction Cache Poisoning,Medium,6.8,udp/53/dns,gone,"Not reproduced - scanner variation, no change was made to this host"
+10.10.10.1,142960,HSTS Missing From HTTPS Server (RFC 6797),Medium,6.5,tcp/443/www,Medium,Open - not in the top five
+10.10.10.1,51192,SSL Certificate Cannot Be Trusted,Medium,6.5,tcp/443/www,Medium,Open - not in the top five
+10.10.10.1,57582,SSL Self-Signed Certificate,Medium,6.5,tcp/443/www,Medium,Open - not in the top five
+10.10.10.170,51192,SSL Certificate Cannot Be Trusted,Medium,6.5,tcp/8834/www,Medium,Open - not in the top five
+10.10.20.20,139915,"ISC BIND 9.x < 9.11.22, 9.12.x < 9.16.6, 9.17.x < 9.17.4 DoS",Medium,6.5,udp/53/dns,Medium,Open - not in the top five
+10.10.20.20,51192,SSL Certificate Cannot Be Trusted,Medium,6.5,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,57582,SSL Self-Signed Certificate,Medium,6.5,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,104743,TLS Version 1.0 Protocol Detection,Medium,6.5,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,136808,ISC BIND Denial of Service,Medium,5.9,udp/53/dns,Medium,Open - not in the top five
+10.10.20.20,31705,SSL Anonymous Cipher Suites Supported,Medium,5.9,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,89058,SSL DROWN Attack Vulnerability (Decrypting RSA with Obsolete and Weakened eNcryption),Medium,5.9,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,65821,SSL RC4 Cipher Suites Supported (Bar Mitzvah),Medium,5.9,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,12085,Apache Tomcat Default Files,Medium,5.3,tcp/8180/www,gone,Open - not re-detected: Nessus did not fingerprint Tomcat on 8180; Tomcat still running
+10.10.20.20,11213,HTTP TRACE / TRACK Methods Allowed,Medium,5.3,tcp/80/www,Medium,Open - not in the top five
+10.10.20.20,57608,SMB Signing not required,Medium,5.3,tcp/445/cifs,Medium,Open - not in the top five
+10.10.20.20,15901,SSL Certificate Expiry,Medium,5.3,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,45411,SSL Certificate with Wrong Hostname,Medium,5.3,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,26928,SSL Weak Cipher Suites Supported,Medium,5.3,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,90317,SSH Weak Algorithms Supported,Medium,4.3,tcp/22/ssh,Medium,Open - not in the top five
+10.10.20.20,81606,SSL/TLS EXPORT_RSA <= 512-bit Cipher Suites Supported (FREAK),Medium,4.3,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,52611,SMTP Service STARTTLS Plaintext Command Injection,Medium,4.0,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.10.1,10114,ICMP Timestamp Request Remote Date Disclosure,Low,4.0,icmp/0,Low,Open - not in the top five
+10.10.20.20,10114,ICMP Timestamp Request Remote Date Disclosure,Low,4.0,icmp/0,Low,Open - not in the top five
+10.10.20.20,70658,SSH Server CBC Mode Ciphers Enabled,Low,3.7,tcp/22/ssh,Low,Open - not in the top five
+10.10.20.20,153953,SSH Weak Key Exchange Algorithms Enabled,Low,3.7,tcp/22/ssh,Low,Open - not in the top five
+10.10.20.20,83738,SSL/TLS EXPORT_DHE <= 512-bit Export Cipher Suites Supported (Logjam),Low,3.7,tcp/25/smtp,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,78479,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),Low,3.4,tcp/25/smtp;tcp/5432/postgresql,gone,Resolved - side effect of Fix 5 (TLS disabled)
+10.10.20.20,71049,SSH Weak MAC Algorithms Enabled,Low,2.6,tcp/22/ssh,Low,Open - not in the top five
+10.10.20.20,10407,X Server Detection,Low,2.6,tcp/6000/x11,gone,Resolved - side effect of Fix 1 (VNC disabled)
